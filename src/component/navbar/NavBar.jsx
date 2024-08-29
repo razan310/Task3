@@ -12,18 +12,6 @@ const NavBar = () => {
 
     return (
         <header>
-            <div className={styles.top_bar}>
-                <div className={styles.contact_info}>
-                    <span><i className="fas fa-envelope"></i> info@company.com</span>
-                    <span><i className="fas fa-map-marker-alt"></i> Sunny Isles Beach, FL 33160</span>
-                </div>
-                <div className={styles.social_icons}>
-                    <a href="#"><i className="fab fa-facebook-f"></i></a>
-                    <a href="#"><i className="fab fa-twitter"></i></a>
-                    <a href="#"><i className="fab fa-linkedin-in"></i></a>
-                    <a href="#"><i className="fab fa-instagram"></i></a>
-                </div>
-            </div>
             <nav className={styles.navbar}>
                 <div className={styles.navbar_brand}>
                     <h1>VILLA</h1>
@@ -33,7 +21,7 @@ const NavBar = () => {
                 </div>
                 <div className={`${styles.navbar_menu} ${menuOpen ? styles.active : ''}`}>
                     <ul className={styles.navbar_links}>
-                        <li><NavLink className={(isActive) =>isActive ? "active" : ""} to="/ ">Home </NavLink></li>
+                        <li><NavLink className={(isActive) =>isActive ? "active" : ""} to="/Task3/ ">Home </NavLink></li>
                         <li><NavLink className={(isActive) =>isActive ? "active" : ""}  to="/Properties">Properties</NavLink></li>
                         <li><NavLink className={(isActive) =>isActive ? "active" : ""}  to="/BestDeal">Property Details</NavLink></li>
                         <li><NavLink className={(isActive) =>isActive ? "active" : ""}  to="/ContactUs">Contact Us</NavLink></li>
